@@ -6,9 +6,7 @@ BASE_PATH=$(
     pwd
 )
 
-echo "$BASE_PATH"
 FILE_SERVER_LIST=$BASE_PATH"/config.ini"
-echo "$FILE_SERVER_LIST"
 
 # 暂存服务器列表，用于登录操作
 CONFIG_ARR=()
