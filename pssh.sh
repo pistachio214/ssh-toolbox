@@ -16,14 +16,6 @@ CONFIG_ARR=()
 # 记录默认分隔符，用于修改后的还原
 IFS_OLD=$IFS
 
-# Set the terminal encoding to UTF-8
-export LC_ALL=C.UTF-8
-
-# 计算字符串的字节长度
-function get_byte_length() {
-    echo -n "$1" | LC_ALL=C.UTF-8 wc -c
-}
-
 # 输出table的row
 function print_table_row() {
     id="$1"
