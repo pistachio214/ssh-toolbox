@@ -14,8 +14,6 @@ expect {
     "yes/no" { send \"yes\n\"; exp_continue; }
     "Last*" {
         puts "\n登录成功\n";
-        send "PROMPT_COMMAND='echo -ne \"\\033]0;$SERVER_NAME \\007\"' \r";
-        send "clear\r";
     }
     timeout { puts "Expect was timeout."; return }
 }
