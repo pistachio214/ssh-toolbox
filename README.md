@@ -4,7 +4,7 @@ SSH 自动登录脚本
 ### 1. 如何使用当前脚本
 
 1. 修改 config.ini ，追加服务器列表
-	- config.init -> # 格式：hostname,user,ip,port,pwd
+	- config.init -> 格式：hostname,user,ip,port,pwd
 2. 赋予脚本可执行权限 `sudo chmod u+x go_ssh.ex pssh.sh`
 3. 使用
 	- 方式一：`./pssh.sh`
