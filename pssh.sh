@@ -68,7 +68,7 @@ function initialize() {
 
     IFS=$IFS_OLD # 还原分隔符
 
-    echo -en "请输入\033[32m序号\033[0m选择要登录的服务器: "
+    echo -en "请输入 \033[32m序号\033[0m 选择要登录的服务器: "
     handleChoice
 }
 
@@ -106,7 +106,7 @@ function handleChoice {
         read -n 1 retry
         if [[ -n "$retry" && "$retry" = "y" ]]; then
             clear
-            menu
+            initialize
         else
             echo ""
             exit 1
